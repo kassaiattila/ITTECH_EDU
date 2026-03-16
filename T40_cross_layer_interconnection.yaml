@@ -1,0 +1,326 @@
+type: architecture
+meta:
+  title: Cross-Layer Interconnection
+  subtitle: Business-Data-App-Tech-Security Dependencies
+  page_w: 1200
+  page_h: 550
+elements:
+- id: t
+  kind: header
+  label: <b>Cross-Layer Architecture Interconnection</b>
+  pos:
+  - 50
+  - 5
+  - 1100
+  - 35
+  color: dark_blue
+- id: gb
+  kind: group
+  label: <b>Business (Ch6)</b>
+  rect:
+  - 120
+  - 55
+  - 750
+  - 65
+  color: green
+- id: b1
+  kind: box
+  label: <b>Services</b>
+  pos:
+  - 140
+  - 75
+  - 130
+  - 28
+  color: green
+- id: b2
+  kind: box
+  label: <b>Processes</b>
+  pos:
+  - 300
+  - 75
+  - 130
+  - 28
+  color: green
+- id: b3
+  kind: box
+  label: <b>Organisation</b>
+  pos:
+  - 460
+  - 75
+  - 120
+  - 28
+  color: green
+- id: b4
+  kind: box
+  label: <b>KPIs</b>
+  pos:
+  - 610
+  - 75
+  - 110
+  - 28
+  color: green
+- id: gd
+  kind: group
+  label: <b>Data (Ch7)</b>
+  rect:
+  - 120
+  - 145
+  - 750
+  - 65
+  color: blue
+- id: d1
+  kind: box
+  label: <b>6 Domains</b>
+  pos:
+  - 140
+  - 165
+  - 130
+  - 28
+  color: blue
+- id: d2
+  kind: box
+  label: <b>Flows</b>
+  pos:
+  - 300
+  - 165
+  - 120
+  - 28
+  color: blue
+- id: d3
+  kind: box
+  label: <b>Governance</b>
+  pos:
+  - 450
+  - 165
+  - 130
+  - 28
+  color: blue
+- id: d4
+  kind: box
+  label: <b>Classification</b>
+  pos:
+  - 610
+  - 165
+  - 130
+  - 28
+  color: blue
+- id: ga
+  kind: group
+  label: <b>Application (Ch8)</b>
+  rect:
+  - 120
+  - 235
+  - 750
+  - 65
+  color: purple
+- id: aa1
+  kind: box
+  label: <b>MOSIP</b>
+  pos:
+  - 140
+  - 255
+  - 100
+  - 28
+  color: purple
+- id: aa2
+  kind: box
+  label: <b>MIDAS</b>
+  pos:
+  - 260
+  - 255
+  - 100
+  - 28
+  color: teal
+- id: aa3
+  kind: box
+  label: <b>CR/SDIS</b>
+  pos:
+  - 380
+  - 255
+  - 100
+  - 28
+  color: orange
+- id: aa4
+  kind: box
+  label: <b>Portal</b>
+  pos:
+  - 500
+  - 255
+  - 100
+  - 28
+  color: green
+- id: aa5
+  kind: box
+  label: <b>API GW</b>
+  pos:
+  - 620
+  - 255
+  - 110
+  - 28
+  color: dark_blue
+- id: gt
+  kind: group
+  label: <b>Technology (Ch9)</b>
+  rect:
+  - 120
+  - 325
+  - 750
+  - 65
+  color: gray
+- id: tt1
+  kind: box
+  label: <b>DC</b>
+  pos:
+  - 140
+  - 345
+  - 90
+  - 28
+  color: gray
+- id: tt2
+  kind: box
+  label: <b>DR</b>
+  pos:
+  - 250
+  - 345
+  - 80
+  - 28
+  color: gray
+- id: tt3
+  kind: box
+  label: <b>Network</b>
+  pos:
+  - 350
+  - 345
+  - 100
+  - 28
+  color: gray
+- id: tt4
+  kind: box
+  label: <b>Cloud</b>
+  pos:
+  - 470
+  - 345
+  - 100
+  - 28
+  color: blue
+- id: tt5
+  kind: box
+  label: <b>K8s</b>
+  pos:
+  - 590
+  - 345
+  - 100
+  - 28
+  color: blue
+- id: gs
+  kind: group
+  label: <b>Security (Ch10)</b>
+  rect:
+  - 900
+  - 55
+  - 220
+  - 335
+  color: red
+- id: s1
+  kind: box
+  label: <b>Perimeter</b>
+  pos:
+  - 920
+  - 80
+  - 180
+  - 28
+  color: red
+- id: s2
+  kind: box
+  label: <b>IAM</b>
+  pos:
+  - 920
+  - 128
+  - 180
+  - 28
+  color: red
+- id: s3
+  kind: box
+  label: <b>App Sec</b>
+  pos:
+  - 920
+  - 176
+  - 180
+  - 28
+  color: red
+- id: s4
+  kind: box
+  label: <b>Data Sec</b>
+  pos:
+  - 920
+  - 224
+  - 180
+  - 28
+  color: red
+- id: s5
+  kind: box
+  label: <b>SOC/SIEM</b>
+  pos:
+  - 920
+  - 272
+  - 180
+  - 28
+  color: red
+- id: s6
+  kind: box
+  label: <b>PKI/HSM</b>
+  pos:
+  - 920
+  - 320
+  - 180
+  - 28
+  color: red
+- id: gov
+  kind: box
+  label: <b>Governance GLEA</b>
+  pos:
+  - 40
+  - 55
+  - 60
+  - 335
+  color: dark_blue
+  extra:
+  - fontColor=#FFFFFF
+connections:
+- from: b2
+  to: d1
+  color: '#1565C0'
+  exit_xy:
+  - 0.5
+  - 1
+  entry_xy:
+  - 0.3
+  - 0
+- from: d2
+  to: aa1
+  color: '#7B1FA2'
+  exit_xy:
+  - 0.3
+  - 1
+  entry_xy:
+  - 0.5
+  - 0
+- from: aa1
+  to: tt1
+  color: '#666666'
+  exit_xy:
+  - 0.5
+  - 1
+  entry_xy:
+  - 0.5
+  - 0
+- from: d4
+  to: s4
+  color: '#C62828'
+  dashed: true
+  exit_xy:
+  - 1
+  - 0.5
+  entry_xy:
+  - 0
+  - 0.5

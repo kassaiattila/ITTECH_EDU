@@ -1,0 +1,286 @@
+type: architecture
+meta:
+  title: Work Package Dependency Graph
+  subtitle: Critical chains WP-01..WP-20
+  page_w: 1200
+  page_h: 650
+elements:
+- id: t
+  kind: header
+  label: <b>Work Package Dependency Graph</b>
+  pos:
+  - 50
+  - 5
+  - 1100
+  - 35
+  color: dark_blue
+- id: gf
+  kind: group
+  label: <b>Foundation</b>
+  rect:
+  - 40
+  - 60
+  - 230
+  - 500
+  color: red
+- id: a1
+  kind: box
+  label: <b>WP-01</b> Infra
+  pos:
+  - 70
+  - 90
+  - 170
+  - 35
+  color: gray
+  extra:
+  - shadow=1
+- id: a2
+  kind: box
+  label: <b>WP-02</b> Security
+  pos:
+  - 70
+  - 160
+  - 170
+  - 35
+  color: red
+  extra:
+  - shadow=1
+- id: a5
+  kind: box
+  label: <b>WP-05</b> API GW
+  pos:
+  - 70
+  - 230
+  - 170
+  - 35
+  color: blue
+  extra:
+  - shadow=1
+- id: a6
+  kind: box
+  label: <b>WP-06</b> DR
+  pos:
+  - 70
+  - 300
+  - 170
+  - 35
+  color: gray
+  extra:
+  - shadow=1
+- id: gi
+  kind: group
+  label: <b>Identity</b>
+  rect:
+  - 300
+  - 60
+  - 260
+  - 500
+  color: purple
+- id: b3
+  kind: box
+  label: <b>WP-03</b> MOSIP
+  pos:
+  - 340
+  - 90
+  - 170
+  - 35
+  color: purple
+  extra:
+  - shadow=1
+- id: b9
+  kind: box
+  label: <b>WP-09</b> ABIS
+  pos:
+  - 340
+  - 160
+  - 170
+  - 35
+  color: purple
+  extra:
+  - shadow=1
+- id: b8
+  kind: box
+  label: <b>WP-08</b> Rollout
+  pos:
+  - 340
+  - 230
+  - 170
+  - 35
+  color: purple
+  extra:
+  - shadow=1
+- id: b11
+  kind: box
+  label: <b>WP-11</b> Migrate
+  pos:
+  - 340
+  - 300
+  - 170
+  - 35
+  color: green
+  extra:
+  - shadow=1
+- id: b13
+  kind: box
+  label: <b>WP-13</b> Adapt
+  pos:
+  - 340
+  - 370
+  - 170
+  - 35
+  color: blue
+  extra:
+  - shadow=1
+- id: b17
+  kind: box
+  label: <b>WP-17</b> Decomm
+  pos:
+  - 340
+  - 440
+  - 170
+  - 35
+  color: red
+  extra:
+  - shadow=1
+- id: gb
+  kind: group
+  label: <b>Border</b>
+  rect:
+  - 590
+  - 60
+  - 230
+  - 500
+  color: teal
+- id: c4
+  kind: box
+  label: <b>WP-04</b> MIDAS
+  pos:
+  - 630
+  - 90
+  - 170
+  - 35
+  color: teal
+  extra:
+  - shadow=1
+- id: c10
+  kind: box
+  label: <b>WP-10</b> Full
+  pos:
+  - 630
+  - 230
+  - 170
+  - 35
+  color: teal
+  extra:
+  - shadow=1
+- id: c16
+  kind: box
+  label: <b>WP-16</b> Ext
+  pos:
+  - 630
+  - 370
+  - 170
+  - 35
+  color: teal
+  extra:
+  - shadow=1
+- id: gs
+  kind: group
+  label: <b>Services</b>
+  rect:
+  - 850
+  - 60
+  - 220
+  - 500
+  color: green
+- id: d12
+  kind: box
+  label: <b>WP-12</b> Digital
+  pos:
+  - 880
+  - 160
+  - 160
+  - 35
+  color: green
+  extra:
+  - shadow=1
+- id: d18
+  kind: box
+  label: <b>WP-18</b> Native
+  pos:
+  - 880
+  - 340
+  - 160
+  - 35
+  color: blue
+  extra:
+  - shadow=1
+- id: d20
+  kind: box
+  label: <b>WP-20</b> Handover
+  pos:
+  - 880
+  - 440
+  - 160
+  - 35
+  color: gray
+  extra:
+  - shadow=1
+connections:
+- from: a1
+  to: a2
+  color: '#C62828'
+- from: a2
+  to: a5
+  color: '#1565C0'
+- from: a1
+  to: a6
+  color: '#666666'
+- from: a2
+  to: b3
+  color: '#7B1FA2'
+  exit_xy:
+  - 1
+  - 0.5
+  entry_xy:
+  - 0
+  - 0.5
+- from: a2
+  to: c4
+  color: '#00796B'
+  exit_xy:
+  - 1
+  - 0.5
+  entry_xy:
+  - 0
+  - 0.5
+- from: b3
+  to: b9
+  color: '#7B1FA2'
+- from: b3
+  to: b8
+  color: '#7B1FA2'
+- from: b8
+  to: b11
+  color: '#7B1FA2'
+- from: b11
+  to: b17
+  color: '#C62828'
+- from: a5
+  to: b13
+  color: '#1565C0'
+  exit_xy:
+  - 1
+  - 0.5
+  entry_xy:
+  - 0
+  - 0.5
+- from: c4
+  to: c10
+  color: '#00796B'
+- from: c10
+  to: c16
+  color: '#00796B'
+- from: d12
+  to: d18
+  color: '#1565C0'
